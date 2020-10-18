@@ -4,16 +4,26 @@
   "version": "4.0.0",
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "cruip-js-toolkit": "^1.0.2",
     "gatsby": "2.24.80",
+    "gatsby-background-image-es5": "^1.1.2",
+    "gatsby-image": "^2.4.21",
     "gatsby-plugin-manifest": "2.4.34",
     "gatsby-plugin-offline": "3.2.33",
     "gatsby-plugin-postcss": "2.3.13",
     "gatsby-plugin-react-helmet": "3.3.14",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^2.3.17",
     "gatsby-plugin-sharp": "2.6.42",
+    "gatsby-source-filesystem": "^2.3.35",
+    "gatsby-transformer-sharp": "^2.5.18",
+    "node-sass": "^4.14.1",
     "prop-types": "15.7.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "react-helmet": "6.1.0"
+    "react-helmet": "6.1.0",
+    "react-transition-group": "^4.4.1"
   },
   "keywords": [
     "gatsby",
@@ -26,11 +36,9 @@
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
     "analyze": "npm run analyze:lint && npm run analyze:prettier",
-
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write \"**/*.{css,js,jsx,json,md}\"",
     "fix": "npm run fix:lint && npm run fix:prettier",
-
     "build": "gatsby build",
     "develop": "gatsby develop",
     "dev": "npm run develop",
