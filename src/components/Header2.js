@@ -25,7 +25,7 @@ function Header() {
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <h1 className="text-3xl md:text-3xl font-extrabold leading-tighter tracking-tighter">
+              <h1 className="text-2xl md:text-3xl font-extrabold leading-tighter tracking-tighter">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
                   Privo Proxy
                 </span>
@@ -36,14 +36,6 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li>
-                <Link
-                  to="/signin"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Some Link
-                </Link>
-              </li>
               <li>
                 <a
                   href="https://app.privoproxy.com/"

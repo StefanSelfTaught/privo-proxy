@@ -6,9 +6,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Privo Proxy`,
+    description: `Privo Proxy is serving as a API Gateway and is a fully managedmicroservice that makes it easy for developers to publish, maintain, monitor, secure, and operate APIs at any scale.`,
+    author: `PrivoDevelopers`,
   },
   plugins: [
     {

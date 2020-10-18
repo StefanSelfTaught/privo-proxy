@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
 import Transition from "../utils/Transition.js";
 
 import FeatureIcon1 from "../images/svg/feature-1.svg";
@@ -9,17 +7,6 @@ import FeatureIcon3 from "../images/svg/feature-3.svg";
 
 function Features() {
   const [tab, setTab] = useState(1);
-  const data = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "features-bg.png" }) {
-        childImageSharp {
-          fixed(width: 500, height: 462) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `);
 
   const tabs = useRef(null);
 
@@ -173,17 +160,14 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    {/*                    <img
+                    <img
                       className="md:max-w-none mx-auto rounded"
                       src={require("../images/features-bg.png")}
                       width="500"
                       height="462"
                       alt="Features bg"
-                    />*/}
-                    <Img
-                      className="md:max-w-none mx-auto rounded"
-                      fixed={data.file.childImageSharp.fixed}
                     />
+
                     {/*                    <img
                       className="md:max-w-none absolute w-full left-0 transform animate-float"
                       src={require("../images/features-element.png")}
@@ -207,9 +191,12 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Img
+                    <img
                       className="md:max-w-none mx-auto rounded"
-                      fixed={data.file.childImageSharp.fixed}
+                      src={require("../images/features-bg.png")}
+                      width="500"
+                      height="462"
+                      alt="Features bg"
                     />
                     {/*                    <img
                       className="md:max-w-none absolute w-full left-0 transform animate-float"
@@ -234,9 +221,12 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Img
+                    <img
                       className="md:max-w-none mx-auto rounded"
-                      fixed={data.file.childImageSharp.fixed}
+                      src={require("../images/features-bg.png")}
+                      width="500"
+                      height="462"
+                      alt="Features bg"
                     />
                     {/*                    <img
                       className="md:max-w-none absolute w-full left-0 transform animate-float"

@@ -90,7 +90,7 @@ function HeroHome() {
                 {/*                <Img style={{ marginRight: '100px' }} fixed={data.file.childImageSharp.fixed} />*/}
               </div>
               <button
-                className="absolute top-full flex items-center transform -translate-y-16 bg-white rounded-full font-medium group p-4 shadow-lg"
+                className="absolute top-full flex items-center transform -translate-y-14 bg-white rounded-full font-medium group p-4 shadow-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   setVideoModalOpen(true);
@@ -112,8 +112,9 @@ function HeroHome() {
               <div className="relative pb-9/16">
                 <iframe
                   className="absolute w-full h-full"
-                  src="https://www.youtube.com/embed/NeQM1c-XCDc"
-                  title="Video"
+                  src="https://www.youtube.com/embed/hYgP0cBORVg"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  title="API Gateway"
                   allowFullScreen
                 ></iframe>
               </div>

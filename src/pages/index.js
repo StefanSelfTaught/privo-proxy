@@ -1,6 +1,7 @@
 import React from "react";
-import AOS from 'aos';
+import AOS from "aos";
 
+import SEO from '../components/seo';
 import Header from "../components/Header2";
 import HeroHome from "../components/HeroHome";
 import FeaturesHome from "../components/Features";
@@ -21,6 +22,10 @@ function Home() {
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
+      <SEO
+        keywords={[`privo proxy`, `API Gateway`]}
+        title="Privo Proxy"
+      />
       {/*  Site header */}
       <Header />
 
