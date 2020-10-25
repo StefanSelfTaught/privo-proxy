@@ -7,7 +7,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `Privo Proxy`,
-    description: `Privo Proxy is serving as a API Gateway and is a fully managedmicroservice that makes it easy for developers to publish, maintain, monitor, secure, and operate APIs at any scale.`,
+    description: `Privo Proxy is serving as a API Gateway and is a fully managed microservice that makes it easy for developers to publish, maintain, monitor, secure, and operate APIs at any scale.`,
     author: `PrivoDevelopers`,
   },
   plugins: [
@@ -17,13 +17,6 @@ module.exports = {
         rule: {
           include: /svg/,
         },
-      },
-    },
-    {
-      resolve: "gatsby-background-image-es5",
-      options: {
-        // add your own characters to escape, replacing the default ':/'
-        specialChars: "/:",
       },
     },
     {
@@ -40,13 +33,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `Privo Proxy | API Gateway`,
+        short_name: `Privo Proxy`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        theme_color: fullConfig.theme.colors.blue,
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
+        cache_busting_mode: `none`
       },
     },
     {
